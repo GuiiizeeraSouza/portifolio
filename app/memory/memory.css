@@ -1,0 +1,57 @@
+@keyframes slideInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glowPulse {
+  0%, 100% {
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.5), 0 0 20px rgba(59, 130, 246, 0.3);
+  }
+  50% {
+    text-shadow: 0 0 20px rgba(147, 51, 234, 0.8), 0 0 40px rgba(59, 130, 246, 0.6);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+
+.memory-title {
+  animation: slideInDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1);
+  animation-fill-mode: both;
+}
+
+.memory-title span {
+  animation: glowPulse 2s ease-in-out infinite;
+  animation-delay: 0.3s;
+  display: inline-block;
+}
+
+/* Para navegadores que suportam animation-timeline */
+@supports (animation-timeline: view()) {
+  .memory-title {
+    animation: slideInDown 0.8s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+  }
+}
+
+/* Respectar preferência de movimento reduzido */
+@media (prefers-reduced-motion: reduce) {
+  .memory-title,
+  .memory-title span {
+    animation: none;
+    opacity: 1;
+    transform: none;
+    text-shadow: 0 0 10px rgba(147, 51, 234, 0.5);
+  }
+}
