@@ -12,7 +12,7 @@ const services: Service[] = [
     {
         title: "Desenvolvedor Front-end Jr",
         description:
-            "Desenvolvedor Front-end Jr (jan/2025 - presente). Atuando com CSS, TypeScript e React.js no desenvolvimento de soluções web escaláveis. Especializado em Vite.js, Oleo.js e Alert.js para criar interfaces modernas e performáticas.",
+            "MPE Distribuidora (jan/2025 - presente). Atuando com CSS, TypeScript e React.js no desenvolvimento de soluções web escaláveis.",
     },
     {
         title: "Estagiário Front-end",
@@ -22,7 +22,7 @@ const services: Service[] = [
     {
         title: "Desenvolvedor Front-end Freelance",
         description:
-            "Remoto/Híbrido - Santa Maria, RS. Experiência em desenvolvimento de APIs com Node.js, criação de interfaces responsivas e integração de sistemas. Foco em entregar soluções personalizadas e de alta qualidade para diversos clientes.",
+            "Experiência em desenvolvimento de APIs com Node.js, criação de interfaces responsivas e integração de sistemas. Foco em entregar soluções personalizadas e de alta qualidade para diversos clientes.",
     },
 ]
 
@@ -190,7 +190,7 @@ export default function MyExperiences() {
                                     <div className="mt-2 w-1.5 h-1.5 rounded-full bg-purple-400 flex-shrink-0"></div>
                                     <div className="text-left">
                                         <p className="text-white font-medium">Faculdade de Sistemas de Informação</p>
-                                        <p className="text-gray-400 text-sm">Cursando - Formação em desenvolvimento de software e tecnologia</p>
+                                        <p className="text-gray-400 text-sm">Trancado - Formação em desenvolvimento de software e tecnologia</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-3">

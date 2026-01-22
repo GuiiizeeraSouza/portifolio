@@ -159,10 +159,7 @@ export default function Technologies() {
               <div className="flex items-center justify-between relative z-10">
                 <div className="rounded-xl bg-black/20 border border-white/10 p-2 shadow-inner">
                   <div className="drop-shadow-[0_6px_24px_rgba(0,0,0,0.35)]">{tech.icon}</div>
-                </div>
-                <span className={`text-[10px] px-2 py-0.5 rounded-full border uppercase tracking-wide ${badgeStyle[tech.level]}`}>
-                  {tech.level}
-                </span>
+                </div>         
               </div>
 
               <div className="relative z-10 space-y-1">

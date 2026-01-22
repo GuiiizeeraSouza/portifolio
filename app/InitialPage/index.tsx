@@ -15,7 +15,7 @@ export default function InitialPage() {
         },
         {
             name: "Lucas Mendes Gonzales",
-            photoUrl: "https://media.licdn.com/dms/image/v2/D4D03AQFD0kNBS6vwBA/profile-displayphoto-scale_100_100/B4DZvESa.UHQAc-/0/1768524727884?e=1770854400&v=beta&t=uYhLnXDuGdzNMa04iE0WazYC9HGBHjSL0Wpc2Uxs8cU",
+            photoUrl: "https://media.licdn.com/dms/image/v2/D5603AQFSEVzGBNNoTQ/profile-displayphoto-scale_400_400/B56ZvhLWX2JEAk-/0/1769009409126?e=1770854400&v=beta&t=XqrSGRsIB7RNWDLDsrr8iJedRmwD5zBDd2f1ymTf_dw",
             role: "Desenvolvedor de Software Pleno @ Viasoft Korp | C# | .NET Framework | Typescript | Angular | PostgreSQL",
             text: "Profissional altamente qualificado e comprometido. A capacidade de resolver problemas complexos e a atenção aos detalhes fazem dele um asset valioso para qualquer equipe."
         },
@@ -94,7 +94,7 @@ export default function InitialPage() {
                         <img src="https://media.licdn.com/dms/image/v2/D4D35AQHqKEanlxEvdw/profile-framedphoto-shrink_800_800/B4DZk0SZQiJMAg-/0/1757518861676?e=1769565600&v=beta&t=yomokORExH6NxJBVf6bAniLz0uQUvyQIRsbS_zLjENE" alt="Francesco Krum" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
                     </a>
                     <a href="https://www.linkedin.com/in/lucas-mendes-gonzales-ba7607230/" target="_blank" rel="noopener noreferrer" title="Clique para visitar o perfil">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQFD0kNBS6vwBA/profile-displayphoto-scale_100_100/B4DZvESa.UHQAc-/0/1768524727884?e=1770854400&v=beta&t=uYhLnXDuGdzNMa04iE0WazYC9HGBHjSL0Wpc2Uxs8cU" alt="Lucas Mendes Gonzales" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
+                        <img src="https://media.licdn.com/dms/image/v2/D5603AQFSEVzGBNNoTQ/profile-displayphoto-scale_400_400/B56ZvhLWX2JEAk-/0/1769009409126?e=1770854400&v=beta&t=XqrSGRsIB7RNWDLDsrr8iJedRmwD5zBDd2f1ymTf_dw" alt="Lucas Mendes Gonzales" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
                     </a>
                     <a href="https://www.linkedin.com/in/evandrocsjr/" target="_blank" rel="noopener noreferrer" title="Clique para visitar o perfil">
                         <img src="https://media.licdn.com/dms/image/v2/D5603AQFDS_JqncCEsg/profile-displayphoto-scale_100_100/B56ZpfG3LhJwAc-/0/1762532226753?e=1770854400&v=beta&t=xvmwUpf060XYbENqPvFF5oMqnb1SfjmVtGKHzuZMjZs" alt="Evandro Cunha dos Santos Junior" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
