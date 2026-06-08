@@ -9,25 +9,25 @@ export default function InitialPage() {
     const feedbacksData = [
         {
             name: "Francesco Krum",
-            photoUrl: "https://media.licdn.com/dms/image/v2/D4D35AQHqKEanlxEvdw/profile-framedphoto-shrink_800_800/B4DZk0SZQiJMAg-/0/1757518861676?e=1769565600&v=beta&t=yomokORExH6NxJBVf6bAniLz0uQUvyQIRsbS_zLjENE",
+            photoUrl: "/FrancescoKrum.jpg",
             role: "Software Engineer - Java | Spring Boot | Angular | Microservices",
             text: "Trabalhei com o Guilherme durante alguns meses na Ideatos Soluções em Tecnologia, posso afirmar com convicção que é um profissional excelente dentro do desenvolvimento frontend e UI/UX. Ademais também é uma pessoa de muito boa comunicação e fácil convivência, com certeza recomendo ele a qualquer empresa!!"
         },
         {
             name: "Lucas Mendes Gonzales",
-            photoUrl: "https://media.licdn.com/dms/image/v2/D5603AQFSEVzGBNNoTQ/profile-displayphoto-scale_400_400/B56ZvhLWX2JEAk-/0/1769009409126?e=1770854400&v=beta&t=XqrSGRsIB7RNWDLDsrr8iJedRmwD5zBDd2f1ymTf_dw",
+            photoUrl: "/LucasMendes.jpg",
             role: "Desenvolvedor de Software Pleno @ Viasoft Korp | C# | .NET Framework | Typescript | Angular | PostgreSQL",
             text: "Profissional altamente qualificado e comprometido. A capacidade de resolver problemas complexos e a atenção aos detalhes fazem dele um asset valioso para qualquer equipe."
         },
         {
             name: "Evandro Cunha dos Santos Junior",
-            photoUrl: "https://media.licdn.com/dms/image/v2/D5603AQFDS_JqncCEsg/profile-displayphoto-scale_100_100/B56ZpfG3LhJwAc-/0/1762532226753?e=1770854400&v=beta&t=xvmwUpf060XYbENqPvFF5oMqnb1SfjmVtGKHzuZMjZs",
+            photoUrl: "/EvandroCunha.jpg",
             role: "Desenvolvedor Full Stack Pleno | C# | .NET | .NET Framework | React | React Native | AWS",
             text: "Trabalhar com o Guilherme na MPE tem sido uma experiência muito positiva. Ele possui uma visão estratégica do desenvolvimento de software, sempre atento às melhores práticas e à qualidade do código. Sua capacidade de aprender rapidamente novas tecnologias e aplicá-las de forma prática no dia a dia é um diferencial que agrega muito ao time. Além das habilidades técnicas, o Guilherme é um colega que sabe colaborar, ouvir e ajudar. Ele tem uma postura profissional exemplar, transmitindo confiança e contribuindo para um ambiente de trabalho produtivo e motivador. Sem dúvida, é um profissional que recomendo para qualquer desafio na área de tecnologia."
         },
         {
             name: "Osmar Tassinari Neto",
-            photoUrl: "https://media.licdn.com/dms/image/v2/D4D03AQEEO_X0JsPtPw/profile-displayphoto-scale_100_100/B4DZvCiWU0KYAg-/0/1768495343740?e=1770854400&v=beta&t=CNsE90eNU1-GN8W8agh9uNyxnD8QRHB7fo4IgsgsHbI",
+            photoUrl: "/OsmarNeto.jpg",
             role: "Projetista Elétrico e Fotovoltaico | Projetos e execução para concessionárias e cooperativas | Técnico Eletricista Sênior",
             text: "É com grande satisfação que recomendo o Guilherme. Sua jornada de estagiário a Desenvolvedor Jr. na MPE foi uma das mais rápidas que já vi, impulsionada por sua dedicação e talento técnico. Ele entrega um trabalho de alta qualidade, aprende com velocidade e contribui positivamente para os objetivos da equipe. Um profissional exemplar com uma ética de trabalho impecável."
         },
@@ -91,16 +91,16 @@ export default function InitialPage() {
             <div className="flex flex-col items-center gap-4 px-4 sm:px-6" >
                 <div className="flex flex-wrap justify-center -space-x-3">
                     <a href="https://www.linkedin.com/in/francescokrum/" target="_blank" rel="noopener noreferrer" title="Clique para visitar o perfil">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D35AQHqKEanlxEvdw/profile-framedphoto-shrink_800_800/B4DZk0SZQiJMAg-/0/1757518861676?e=1769565600&v=beta&t=yomokORExH6NxJBVf6bAniLz0uQUvyQIRsbS_zLjENE" alt="Francesco Krum" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
+                        <img src="/FrancescoKrum.jpg" alt="Francesco Krum" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
                     </a>
                     <a href="https://www.linkedin.com/in/lucas-mendes-gonzales-ba7607230/" target="_blank" rel="noopener noreferrer" title="Clique para visitar o perfil">
-                        <img src="https://media.licdn.com/dms/image/v2/D5603AQFSEVzGBNNoTQ/profile-displayphoto-scale_400_400/B56ZvhLWX2JEAk-/0/1769009409126?e=1770854400&v=beta&t=XqrSGRsIB7RNWDLDsrr8iJedRmwD5zBDd2f1ymTf_dw" alt="Lucas Mendes Gonzales" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
+                        <img src="/LucasMendes.jpg" alt="Lucas Mendes Gonzales" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
                     </a>
                     <a href="https://www.linkedin.com/in/evandrocsjr/" target="_blank" rel="noopener noreferrer" title="Clique para visitar o perfil">
-                        <img src="https://media.licdn.com/dms/image/v2/D5603AQFDS_JqncCEsg/profile-displayphoto-scale_100_100/B56ZpfG3LhJwAc-/0/1762532226753?e=1770854400&v=beta&t=xvmwUpf060XYbENqPvFF5oMqnb1SfjmVtGKHzuZMjZs" alt="Evandro Cunha dos Santos Junior" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
+                        <img src="/EvandroCunha.jpg" alt="Evandro Cunha dos Santos Junior" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
                     </a>
                     <a href="https://www.linkedin.com/in/osmar-tassinari-neto/" target="_blank" rel="noopener noreferrer" title="Clique para visitar o perfil">
-                        <img src="https://media.licdn.com/dms/image/v2/D4D03AQEEO_X0JsPtPw/profile-displayphoto-scale_100_100/B4DZvCiWU0KYAg-/0/1768495343740?e=1770854400&v=beta&t=CNsE90eNU1-GN8W8agh9uNyxnD8QRHB7fo4IgsgsHbI" alt="Osmar Tassinari Neto" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
+                        <img src="/OsmarNeto.jpg" alt="Osmar Tassinari Neto" className="w-10 sm:w-12 h-10 sm:h-12 rounded-full border hover:scale-110 transition-transform cursor-pointer" />
                     </a>
                 </div>
                 <div className="relative inline-block">

@@ -7,6 +7,7 @@ import "./header.css";
 
 const navLinks = [
   { label: "Início", href: "/" },
+  { label: "Projetos", href: "/projetos" },
   { label: "Experiências", href: "#experiences" },
   { label: "Tecnologias", href: "#technologies" },
   { label: "Jogo da Memória", href: "/memory" },
@@ -100,8 +101,8 @@ const Header: React.FC<HeaderProps> = ({ title = "Meu App" }) => {
       <div className="header-content">
         <div className="header-brand">
           <img
-            src="https://media.licdn.com/dms/image/v2/D4D03AQE2SfU9ykZnSg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710873397915?e=1770854400&v=beta&t=2LXZWZQFBlP_5U801Rmv1S51OQaBMheRKoTRHdgppaA"
-            alt="Brand"
+            src="/MyProfilePhoto.jpg"
+            alt="Foto de perfil"
             className="brand-mark"
             style={{ width: '60px', height: '55px', borderRadius: '50%' }}
           />
