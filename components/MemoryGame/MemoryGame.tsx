@@ -34,6 +34,7 @@ const MemoryGame: React.FC = () => {
   const [matched, setMatched] = useState<number[]>([]);
   const [moves, setMoves] = useState(0);
   const [gameWon, setGameWon] = useState(false);
+  const [gameStarted, setGameStarted] = useState(false);
   const [isAnimating, setIsAnimating] = useState(false);
   const [scoreSaved, setScoreSaved] = useState(false);
   const { saveScore } = useGameScores();
@@ -55,6 +56,7 @@ const MemoryGame: React.FC = () => {
     setMatched([]);
     setMoves(0);
     setGameWon(false);
+    setGameStarted(false);
     setIsAnimating(false);
     setScoreSaved(false);
   }, []);
@@ -109,14 +111,23 @@ const MemoryGame: React.FC = () => {
     }
   }, [gameWon, scoreSaved, moves, saveScore]);
 
+  const startGame = useCallback(() => {
+    setGameStarted(true);
+    setFlipped([]);
+    setMatched([]);
+    setMoves(0);
+    setGameWon(false);
+    setScoreSaved(false);
+  }, []);
+
   const handleCardClick = useCallback(
     (id: number) => {
-      if (isAnimating || gameWon) return;
+      if (!gameStarted || isAnimating || gameWon) return;
       if (flipped.includes(id) || matched.includes(id)) return;
 
       setFlipped((prev) => (prev.length < 2 ? [...prev, id] : prev));
     },
-    [flipped, matched, isAnimating, gameWon]
+    [flipped, matched, isAnimating, gameStarted, gameWon]
   );
 
   const progressPercentage = useMemo(
@@ -146,35 +157,43 @@ const MemoryGame: React.FC = () => {
         />
       </div>
 
-      <div className="cards-grid">
-        {cards.map((card) => (
-          <button
-            key={card.id}
-            className={`memory-card ${
-              flipped.includes(card.id) || matched.includes(card.id)
-                ? "flipped"
-                : ""
-            } ${matched.includes(card.id) ? "matched" : ""}`}
-            onClick={() => handleCardClick(card.id)}
-            disabled={isAnimating}
-            aria-label={`Carta ${card.id}`}
-          >
-            <div className="card-inner">
-              <div className="card-front">
-                <div className="card-icon-placeholder" />
-              </div>
-              <div className="card-back">
-                <img
-                  src={card.icon}
-                  alt={card.name}
-                  className="card-icon"
-                  loading="lazy"
-                  decoding="async"
-                />
-              </div>
-            </div>
+      {!gameStarted && (
+        <div className="preview-panel">
+          <p>Veja onde estão todas as imagens antes de começar o jogo.</p>
+          <button className="start-button" onClick={startGame}>
+            Começar Jogo
           </button>
-        ))}
+        </div>
+      )}
+
+      <div className="cards-grid">
+        {cards.map((card) => {
+          const isVisible = !gameStarted || flipped.includes(card.id) || matched.includes(card.id);
+          return (
+            <button
+              key={card.id}
+              className={`memory-card ${isVisible ? "flipped" : ""} ${matched.includes(card.id) ? "matched" : ""}`}
+              onClick={() => handleCardClick(card.id)}
+              disabled={isAnimating || !gameStarted}
+              aria-label={`Carta ${card.id}`}
+            >
+              <div className="card-inner">
+                <div className="card-front">
+                  <div className="card-icon-placeholder" />
+                </div>
+                <div className="card-back">
+                  <img
+                    src={card.icon}
+                    alt={card.name}
+                    className="card-icon"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </button>
+          );
+        })}
       </div>
 
       {gameWon && (

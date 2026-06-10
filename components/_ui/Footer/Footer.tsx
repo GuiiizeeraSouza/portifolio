@@ -12,8 +12,8 @@ const Footer: React.FC = () => {
                     <div className="footer-logo">
 
                         <img
-                            src="https://media.licdn.com/dms/image/v2/D4D03AQE2SfU9ykZnSg/profile-displayphoto-shrink_400_400/profile-displayphoto-shrink_400_400/0/1710873397915?e=1770854400&v=beta&t=2LXZWZQFBlP_5U801Rmv1S51OQaBMheRKoTRHdgppaA"
-                            alt="Brand"
+                            src="/MyProfilePhoto.jpg"
+                            alt="Minha foto"
                             className="brand-mark"
                             style={{ width: '60px', height: '55px', borderRadius: '50%' }}
                         />
