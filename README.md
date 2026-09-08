@@ -1,36 +1,70 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfólio — Guilherme Souza
 
-## Getting Started
+Portfólio pessoal desenvolvido com [Next.js](https://nextjs.org) para apresentar minha trajetória como Software Engineer & Front-End Developer, com projetos, tecnologias, depoimentos e dois mini-games interativos.
 
-First, run the development server:
+🔗 Deploy: (https://guiizeerasouza.vercel.app/)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## 🛠️ Stack
+
+- [Next.js 16](https://nextjs.org) (App Router) + [React 19](https://react.dev) + [TypeScript](https://www.typescriptlang.org/)
+- [Tailwind CSS 4](https://tailwindcss.com/)
+- [GSAP](https://gsap.com/) e [Motion](https://motion.dev/) para animações
+- [Lucide React](https://lucide.dev/) para ícones
+- [class-variance-authority](https://cva.style/) e [tailwind-merge](https://github.com/dcastil/tailwind-merge) para composição de estilos
+- [ESLint](https://eslint.org/) para lint
+
+## 📁 Estrutura do projeto
+
+```
+app/
+  page.tsx              # Home
+  InitialPage/           # Seção hero + depoimentos + experiências + tecnologias
+  projetos/               # Listagem e detalhe (/projetos/[slug]) dos projetos
+  memory/                 # Página do Jogo da Memória
+  quiz/                   # Página do Quiz de Programação
+components/
+  _ui/                    # Componentes de UI reutilizáveis (Header, Footer, Carousel, Modal...)
+  MemoryGame/, QuizGame/  # Lógica e UI dos jogos
+  GameScoreboard/         # Placar dos jogos
+  FeedbackCarousel/       # Carrossel de depoimentos
+  Technologies/, MyExperiences/
+hooks/
+  useGameScores.ts        # Persistência de pontuação no localStorage
+lib/
+  projects.ts             # Dados dos projetos exibidos em /projetos
+  utils.ts
+public/                   # Imagens, vídeos de demo e currículo
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🚀 Como rodar localmente
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Pré-requisitos: [Node.js](https://nodejs.org/) 18+ e npm.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+# instalar dependências
+npm install
 
-## Learn More
+# ambiente de desenvolvimento
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Abra [http://localhost:3000](http://localhost:3000) no navegador.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Outros scripts disponíveis:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build   # build de produção
+npm run start   # inicia o build de produção
+npm run lint    # roda o ESLint
+```
 
-## Deploy on Vercel
+## 📦 Deploy
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+O projeto está pronto para deploy na [Vercel](https://vercel.com/new), criadora do Next.js. Basta importar o repositório e seguir o fluxo padrão de deploy.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📬 Contato
+
+- LinkedIn: [linkedin.com/in/guilherme-souza-](https://www.linkedin.com/in/guilherme-souza-/)
+- E-mail: guilhermefernandesouza.dev@gmail.com
+
+---
